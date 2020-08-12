@@ -1,0 +1,30 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    color: whitesmoke;
+    height: 100vh;
+    text-align: center;
+    /* Gradient at a 45-degree angle */
+    /* https://developer.mozilla.org/en-US/docs/Web/CSS/linear-gradient */
+    background: linear-gradient(45deg, red, blue);
+	background-size: 400% 400%;
+	animation: gradient 15s infinite;
+}
+
+h1 {
+    padding: 200px;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
